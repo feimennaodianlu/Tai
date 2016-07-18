@@ -1,0 +1,47 @@
+ShowPrefabAndPath.cs
+CreatePrefab.cs
+ApplyPrefab
+
+MainStatus在MainDirector中创建，并以单例模式存在。其挂在uiroot下，所以在创建后在游戏退出前会一直存在。
+
+
+// 概念
+//	* 一个入口窗口，由【主场景】触发
+//	* 需要定制MainStatus的mode
+//	* 占据屏幕上除【顶部玩家状态（根据MainWindow mode的定制）】，通常还会对这两者的输入做出响应
+//	* 需要与EntryDirector配合使用
+abstract class EntryWindow : UIWindow
+{
+	protected override void OnShow(bool show)
+	{
+		base.OnShow( show );
+
+		if( show  )
+			MainStatus.Instance.SetContent( new MainStatus.Content( MainStatusMode ) );
+	}
+
+	public virtual MainStatus.ModeFlags MainStatusMode
+	{
+		get { return MainStatus.ModeFlags.EntryWindowStyle; }
+	}
+}
+
+[Tai]
+在MainWindowDirector中创建，初始化时获取服务端的数据，随后就一直是自己增加coin和diamond（cp是以服务端事件形式增加coin和diamond）。
+
+
+class EntryWindow: UIWindow
+{
+	protected void InitializeEntryWindow()
+	{
+		MainStatus.Instance.Reset(MainStatusMode, xxxx );
+	}
+	
+	public abstract MainStatus.Mode MainStatusMode
+}
+
+
+
+
+
+

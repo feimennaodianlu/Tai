@@ -1,0 +1,4 @@
+CloseButton: ´¿Í¼Æ¬
+ButtonTemplate1: °´Å¥ + ÎÄ×Ö
+ButtonTemplate2: °´Å¥ + Í¼Æ¬
+ButtonTemplate3: °´Å¥ + ÎÄ×Ö + Í¼Æ¬

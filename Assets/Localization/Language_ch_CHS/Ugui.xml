@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ <Item id ="Button" value ="按钮">
+-->
+
+<Root>
+  <!--StartMenu-->
+  <Item id ="StartWindow.GameName" value ="Tai Game"/>
+  <Item id ="StartMenu.EnterGame" value ="进 入 游 戏"/>
+  <Item id ="StartMenu.Register" value ="注  册"/>
+  <Item id ="StartMenu.Login" value ="登  陆"/>
+  <Item id ="StartMenu.Login5" value ="登     陆"/>
+  <Item id ="StartMenu.PlsEnterUsername" value ="请输入用户名..."/>
+  <Item id ="StartMenu.PlsEnterPassword" value ="请输入密码..."/>
+  <Item id ="StartMenu.Username" value ="用户名: "/>
+  <Item id ="StartMenu.Password" value ="密码: "/>
+  <Item id ="StartMenu.RegisterNewUser" value ="注 册 新 用 户"/>
+  <Item id ="StartMenu.ConfirmPassword" value ="确认密码: "/>
+  <Item id ="StartMenu.MobilePhoneNumber" value ="手机号: "/>
+  <Item id ="StartMenu.PlsConfirmPassword" value ="请确认密码..."/>
+  <Item id ="StartMenu.PlsEnterPhoneNumber" value ="请输入手机号..."/>
+  <Item id ="StartMenu.Cancel" value ="取  消"/>
+  <Item id ="StartMenu.RegisterAndLogin" value ="注册并登陆"/>
+
+  <Item id ="ServerListWindow.ChooseServer" value ="选 择 服 务 器"/>
+  <Item id ="ServerListWindow.ServerList" value ="服务器列表"/>
+  <Item id ="ServerListWindow.SelectedServer" value ="已选择的服务器"/>
+
+  <Item id ="CharacterSelectionWindow.ChangeCharacter" value ="更 换 角 色"/>
+  <Item id ="CharacterSelectionWindow.Bulltin" value ="公 告"/>
+  <Item id ="CharacterSelectionWindow.EnterGame" value ="进入游戏"/>
+
+  <!--<Item id ="MessageBox.Confirm" value ="确  认"/>
+  <Item id ="MessageBox.Cancel" value ="取  消"/>-->
+
+
+
+</Root>
